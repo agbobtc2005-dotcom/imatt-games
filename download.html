@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Download - imatt GAMES</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div class="brand">
+
+            <img
+                src="images/logo.png"
+                alt="imatt GAMES Logo"
+            >
+
+            <span>imatt GAMES</span>
+
+        </div>
+
+    </header>
+
+
+    <main class="container">
+
+        <div class="game-details">
+
+            <h2>⬇️ Download Game</h2>
+
+            <p id="downloadMessage">
+                Your download information is ready.
+            </p>
+
+
+            <div class="download-box">
+
+                <h3 id="gameName">
+                    Game
+                </h3>
+
+
+                <p>
+                    🎮 Category:
+                    <strong id="gameCategory">
+                        Game
+                    </strong>
+                </p>
+
+
+                <p>
+                    📦 File size:
+                    <strong id="gameSize">
+                        Unknown
+                    </strong>
+                </p>
+
+
+                <p>
+                    🔢 Version:
+                    <strong id="gameVersion">
+                        1.0
+                    </strong>
+                </p>
+
+
+                <p>
+                    📁 Download source:
+                    <strong id="gameType">
+                        Official download
+                    </strong>
+                </p>
+
+
+                <p>
+                    📅 Release:
+                    <strong id="gameRelease">
+                        2026
+                    </strong>
+                </p>
+
+
+                <div class="download-status">
+
+                    🛡️ Download source provided by
+                    imatt GAMES.
+
+                </div>
+
+
+                <a
+                    href="#"
+                    class="download-btn"
+                    id="downloadLink"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    ⬇️ Download Now
+                </a>
+
+            </div>
+
+
+            <br>
+
+
+            <a
+                href="index.html"
+                class="back-btn"
+            >
+                ← Back to imatt GAMES
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <script>
+
+        /* Get the game from the URL */
+
+        const params =
+            new URLSearchParams(window.location.search);
+
+        const game =
+            params.get("game");
+
+
+        /* Game information */
+
+        const games = {
+
+            minecraft: {
+
+                name: "Minecraft",
+
+                category: "Adventure",
+
+                size: "250 MB",
+
+                version: "1.0",
+
+                type: "Official download",
+
+                release: "2026",
+
+                download: "#"
+
+            },
+
+
+            gta5: {
+
+                name: "GTA V",
+
+                category: "Action",
+
+                size: "110 GB",
+
+                version: "1.0",
+
+                type: "Official download",
+
+                release: "2026",
+
+                download: "#"
+
+            },
+
+
+            eafc: {
+
+                name: "EA FC",
+
+                category: "Sports",
+
+                size: "997.39 MB",
+
+                version: "1.0",
+
+                type: "MediaFire",
+
+                release: "2026",
+
+                download:
+                    "https://www.mediafire.com/file/1q6kl4dmh5rb540/imattGAMES/file"
+
+            }
+
+        };
+
+
+        /* Display the selected game */
+
+        if (games[game]) {
+
+            document.getElementById("gameName")
+                .textContent =
+                games[game].name;
+
+
+            document.getElementById("gameCategory")
+                .textContent =
+                games[game].category;
+
+
+            document.getElementById("gameSize")
+                .textContent =
+                games[game].size;
+
+
+            document.getElementById("gameVersion")
+                .textContent =
+                games[game].version;
+
+
+            document.getElementById("gameType")
+                .textContent =
+                games[game].type;
+
+
+            document.getElementById("gameRelease")
+                .textContent =
+                games[game].release;
+
+
+            document.getElementById("downloadLink")
+                .href =
+                games[game].download;
+
+
+            document.getElementById("downloadMessage")
+                .textContent =
+                "Your download information is ready.";
+
+        }
+
+    </script>
+
+</body>
+
+</html>

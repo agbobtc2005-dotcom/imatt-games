@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>imatt GAMES</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+
+        <div class="nav-bar">
+
+            <div class="brand">
+    <img src="images/logo.png" alt="imatt GAMES Logo">
+    <span>imatt GAMES</span>
+</div>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#games">Games</a>
+                <a href="#categories">Categories</a>
+            </nav>
+
+        </div>
+
+        <p>Discover your next favorite game</p>
+
+    </header>
+
+
+    <main class="container">
+
+        <!-- Featured Game -->
+        <div class="featured">
+
+            <img
+                src="images/minecraft.jpg"
+                alt="Featured Minecraft Game"
+            >
+
+            <div class="featured-content">
+
+                <span>🔥 FEATURED GAME</span>
+
+                <h3>imatt GAMES</h3>
+
+                <p>⭐ 4.9 | Adventure</p>
+
+                <p>
+                    Explore, build and survive in an endless world.
+                    Create amazing structures and begin your next
+                    gaming adventure.
+                </p>
+
+                <a
+                    href="minecraft.html"
+                    class="featured-btn"
+                >
+                    View Game
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Search -->
+        <input
+            class="search"
+            type="text"
+            placeholder="🔍 Search games..."
+        >
+
+
+        <!-- Categories -->
+        <div class="categories" id="categories">
+
+            <button onclick="filterGames('all')">
+                All
+            </button>
+
+            <button onclick="filterGames('Action')">
+                Action
+            </button>
+
+            <button onclick="filterGames('Adventure')">
+                Adventure
+            </button>
+
+            <button onclick="filterGames('Racing')">
+                Racing
+            </button>
+
+            <button onclick="filterGames('Sports')">
+                Sports
+            </button>
+
+        </div>
+
+
+        <!-- Games -->
+        <h2 id="games">Latest Games</h2>
+
+
+        <!-- Minecraft -->
+        <div class="game-card" data-category="Adventure">
+
+            <img
+                src="images/minecraft.jpg"
+                alt="Minecraft"
+            >
+
+            <h2>Minecraft</h2>
+
+            <p>⭐ 4.8 | 250 MB</p>
+
+            <p>
+                Explore, build and survive in an endless world.
+            </p>
+
+            <a
+                href="minecraft.html"
+                class="download-btn"
+            >
+                View Game
+            </a>
+
+        </div>
+
+
+        <!-- GTA V -->
+        <div class="game-card" data-category="Action">
+
+            <img
+                src="images/gta5.jpg"
+                alt="GTA V"
+            >
+
+            <h2>GTA V</h2>
+
+            <p>⭐ 4.7 | 110 GB</p>
+
+            <p>
+                Experience an open-world adventure filled
+                with missions and exploration.
+            </p>
+
+            <a
+                href="gta5.html"
+                class="download-btn"
+            >
+                View Game
+            </a>
+
+        </div>
+
+
+        <!-- EA FC -->
+        <div class="game-card" data-category="Sports">
+
+            <img
+                src="images/eafc.jpg"
+                alt="EA FC"
+            >
+
+            <h2>EA FC</h2>
+
+            <p>⭐ 4.6 | 50 GB</p>
+
+            <p>
+                Experience football with your favorite teams,
+                players and competitions.
+            </p>
+
+            <a
+                href="eafc.html"
+                class="download-btn"
+            >
+                View Game
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <footer>
+    <h3>🎮 GameVault</h3>
+
+    <p>
+        Discover games, explore new worlds and
+        find your next favorite game.
+    </p>
+
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="#games">Games</a>
+        <a href="#categories">Categories</a>
+    </div>
+
+    <p class="copyright">
+        © 2026 GameVault. All rights reserved.
+    </p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
